@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #2c3e50; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #34495e; padding: 10px 0; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        .container { max-width: 1000px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 8px; }
+        h2 { color: #2c3e50; }
+        .rooms { display: flex; gap: 20px; flex-wrap: wrap; }
+        .room { background: #ecf0f1; padding: 20px; border-radius: 6px; flex: 1 1 250px; }
+        .room img { width: 100%; border-radius: 6px; }
+        footer { background: #2c3e50; color: #fff; text-align: center; padding: 15px 0; margin-top: 30px; }
+        @media (max-width: 700px) {
+            .rooms { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DreamStay Hotel</h1>
+        <p>Your comfort is our priority</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>DreamStay Hotel offers luxury accommodation with top-notch amenities and friendly service. Located in the heart of the city, we are the perfect choice for both business and leisure travelers.</p>
+        </section>
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="rooms">
+                <div class="room">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Deluxe Room">
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with king-size bed, free Wi-Fi, and city view.</p>
+                </div>
+                <div class="room">
+                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="Suite">
+                    <h3>Suite</h3>
+                    <p>Luxury suite with living area, minibar, and complimentary breakfast.</p>
+                </div>
+                <div class="room">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Family Room">
+                    <h3>Family Room</h3>
+                    <p>Comfortable room for families, includes two queen beds and a sofa.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 DreamStay Hotel. All rights reserved.
+    </footer>
+</body>
+</html>
